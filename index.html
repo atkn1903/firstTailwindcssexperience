@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Order summary card</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body{
+      background-image: url(/images/pattern-background-desktop.svg);
+      /* background-image: url(/images/pattern-background-desktop.svg); */
+      background-size: 100% 50%;
+      background-repeat:no-repeat;
+      background-position: 50% -10%;
+      font-family: 'Red Hat Display', sans-serif;;
+    }
+  </style>
+   <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            PaleBlue: 'hsl(225, 100%, 94%)',
+            BrightBlue: 'hsl(245, 75%, 52%)',
+            VerypaleBlue: 'hsl(225, 100%, 98%)',
+            DesaturatedBlue: 'hsl(224, 23%, 55%)',
+            DarkBlue: 'hsl(223, 47%, 23%)',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="h-screen bg-PaleBlue flex flex-col justify-center">
+  <!-- card container -->
+  <div id="card" class="max-w-sm bg-white border-blue-400 w-3/4 mx-auto rounded-xl">
+    <!-- image container -->
+  <div class="">
+    <img src="/images/illustration-hero.svg" alt="" class="w-full rounded-t-xl">
+  </div>
+  <!-- card-content container -->
+  <div id="card-content" class="py-2 px-3 text-center mx-auto">
+    <!-- card header -->
+  <h1 class="text-2xl font-black py-4">Order Summary </h1>
+    <!-- card info -->
+  <p class="py-3 text-DesaturatedBlue font-medium"> You can now listen to millions of songs, audiobooks, and podcasts on any 
+  device anywhere you like!</p>
+  <!-- price info -->
+  <div class="container my-6 flex flex-row justify-around items-center py-4 bg-gray-100 space-x-4 rounded-xl">
+    <img src="/images/icon-music.svg" alt="" class="">
+     <div class="flex flex-col">
+    <div class="relative right-3 font-bold">Annual Plan</div>
+    <div class="relative right-3 text-DesaturatedBlue">$59.99/year</div>
+    </div>  
+  <a href="#" class="text-BrightBlue font-bold underline decoration-solid text-sm hover:opacity-80 hover:no-underline">Change</a>
+  </div>
+  <!-- card buttons -->
+    <div class="flex flex-col py-1">
+  <a href="#" class="bg-BrightBlue py-4 text-white font-bold rounded-xl hover:opacity-80"> Proceed to Payment </a>
+  <a href="#" class="py-4 text-DesaturatedBlue font-bold rounded-xl hover:text-black"> Cancel Order </a>
+  </div>  
+</div>
+</div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
